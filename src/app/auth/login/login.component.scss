@@ -1,0 +1,27 @@
+section{
+    background-image: url('../../../assets/bg72.gif');
+    background-origin: content-box;
+    background-position: center;
+    background-size: cover;
+   
+}
+@media only screen and (max-width: 768px){
+    section{
+        background-image: url('../../../assets/bg50.gif');
+        background-origin: content-box;
+        background-size: cover;
+        background-position: center;
+       
+
+       
+    }
+    // .respon{
+    //     // border:2px solid rgb(95, 89, 89);
+    //     border-radius:20px;
+    //     background-color: aliceblue;
+    //     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    // }
+}
+
+
+

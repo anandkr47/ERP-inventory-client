@@ -1,0 +1,45 @@
+<section class=" border-blue-500" style="border:2px solid black;margin:10px;border-radius: 15px;">
+<div class="relative overflow-x-auto " style="margin:20px">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Product name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Product price
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Description
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700" *ngFor="let d of data" >
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{d.pname}}
+                </th>
+                <td class="px-6 py-4">
+                    $  {{d.pprice}}
+                </td>
+                <td class="px-6 py-4">
+                    {{d.pcat}}
+                </td>
+                <td class="px-6 py-4">
+                    {{d.pdesc}}
+                </td>
+                <td class="px-6 py-4">
+                    <mat-icon style="color:blue" >edit</mat-icon >&nbsp;<mat-icon style="color:red">delete</mat-icon>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div></section>
+
