@@ -9,23 +9,23 @@ export class GlobalServiceService {
   constructor(private http:HttpClient) { }
   
   userRegister(data:any){
-    return this.http.post('http://localhost:5000/user/register',data);
+    return this.http.post('https://erp-inventory-server.onrender.com/user/register',data);
   }
   userLogin(data:any){
-    return this.http.post('http://localhost:5000/user/login',data);
+    return this.http.post('https://erp-inventory-server.onrender.com/user/login',data);
   }
   wUserLogin(data:any){
-    return this.http.post('http://localhost:5000/user/wlogin',data);
+    return this.http.post('https://erp-inventory-server.onrender.com/user/wlogin',data);
   }
   uploadProduct(file:any){
     console.log(file)
-    return this.http.post('http://localhost:5000/user/uploadImage',file);
+    return this.http.post('https://erp-inventory-server.onrender.com/user/uploadImage',file);
   }
   createProduct(data:any){
     console.log(data,"product");
-    return this.http.post('http://localhost:5000/user/addProduct',data);
+    return this.http.post('https://erp-inventory-server.onrender.com/user/addProduct',data);
   }
   getProduct(){
-    return this.http.get('http://localhost:5000/user/getProduct');
+    return this.http.get('https://erp-inventory-server.onrender.com/user/getProduct');
   }
 }
